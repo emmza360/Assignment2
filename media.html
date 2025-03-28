@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>REPONSIVE MEDIA </title>
+<style>
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main main right'
+    'footer footer footer footer footer footer';
+  gap: 10px;
+  background-color: white;
+  padding: 10px;
+}
+
+.grid-container > div {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.item1 {
+  grid-area: header;
+  background-color: black;
+  text-align: center;
+  color: #ffffff;
+}
+
+.item1 > h1 {
+  font-size: 40px;
+}
+
+@media only Laptop and (max-width: 1024px) {
+  .item1 {grid-area: 1 / span 6;}
+}
+
+@media only Tablet and (min-width: 600px) {
+  .item1 {grid-area: 1 / span 6;}
+}
+
+@media only MOBILE and (min-width: 768px) {
+  .item1 {grid-area: 1 / span 6;}
+}
+
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+
+  <div class="item1"><h1>EMMANUEL LALEYE</h1></div>
+
+    <!--Unordered-->
+    <section>
+        <p><strong>ABOUT</strong></p>
+    
+            <p>HI, I AM EMMANUEL LALEYE A SOFTWARE ENGINEER</p><br>
+            <a href="#"><img src="Screenshot_20241227_212614_Gallery.jpg" alt="emmza" width="250px;"/></a><br>
+        <br>
+        <p><strong>FRONT - END ENGINEER</strong></p>
+    <ul>
+        <li>I am a front-end engineer - a builder of experiences, a problem-solver, and a creator of seamless digital interactions. I turn complex ideas into intuitive, beautiful, and accessible interfaces that connect people to technology effortlessly. Every line of code I write is a step toward innovation, ensuring that design meets functionality with precision and elegance. I don't just develop websites; I craft experiences that inspire, engage, and leave a lasting impact.</li><br>
+        <a href="#"><img src="Software-Engineer-Career-scaled.jpg" alt="picture" width="350px"/></a>
+    </ul>
+   </section>
+    <ol>
+        <li>GOALS:</li>
+        <ul>
+            <li>To craft immersive and intuitive user interfaces that enhance user engagement.</li>
+            <li>To stay ahead of emerging web technologies, continuously learning and improving.</li>
+            <li>To create accessible and inclusive digital experiences for all users.</li>
+            <li>To optimize performance and efficiency, making the web faster and more enjoyable.</li>
+        </ul>
+        <br>
+        <li>Achievements:</li>
+        <ul>
+            <li>Led front-end architecture decisions, improving scalability and maintainability.</li>
+            <li>Implemented design systems that streamlined development workflows and enhanced brand consistency.</li>
+            <li>Contributed to open-source projects and mentored aspiring developers, fostering growth in the tech community.</li><br>
+            <a href="#"><img src="work.png" width="350px"/></a>
+        </ul>
+    </ol>
+   </section>
+  </div>
+
+
+</body>
+</html>
